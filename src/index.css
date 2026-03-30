@@ -6,19 +6,23 @@
 }
 
 body {
-  @apply bg-black text-white antialiased selection:bg-orange-500 selection:text-black;
+  @apply bg-white text-zinc-900 antialiased selection:bg-zinc-900 selection:text-white;
   font-family: var(--font-sans);
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-black;
+  @apply bg-white;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-zinc-800 hover:bg-orange-500 transition-colors;
+  @apply bg-zinc-200 hover:bg-zinc-300 transition-colors;
+}
+
+.writing-mode-vertical {
+  writing-mode: vertical-rl;
 }
